@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte1</title>
+    <link rel="stylesheet" href="estilostarea2.css">
+  
+    
+</head>
+<body>
+    
+   
+
+    <div class="Container"><br>
+        <header>
+            Formulario para Solicitud de Soporte
+        </header><br>
+     <fieldset>
+      <div class="headertext"> <br>
+        
+        <legend>Ingrese su solicitud de Apoyo en Línea<br>
+            ¿En qué podemos ayudar?</legend>
+      </div>
+
+      <fieldset>
+        <section><br>
+            <label for="fecha">Fecha de la Solicitud:</label>
+            <input type="text" id="fecha" name="fecha" placeholder="">
+          </section>
+      </fieldset>
+
+      <fieldset>
+        <section>
+            <div class="row">
+                <div>
+                  <label for="OS">Sistema Operativo</label>  
+                  <select name="OS" id="OS">
+                    <option value=""></option>
+                    <option value="1">Windows</option>
+                    <option value="2">macOS</option>
+                    <option value="3">Linux</option>
+                  </select>
+                </div>
+
+                <div>
+                    <label for="Browser">Navegador</label>
+                    <select name="browser" id="browser">
+                        <option value=""></option>
+                        <option value="1">Chrome</option>
+                        <option value="2">Safari</option>
+                        <option value="3">Firefox</option>
+                        <option value="4">Opera</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <section>
+          <label for="description">Describa a detalle lo sucedido</label>
+          <textarea name="description" id="description" placeholder=""></textarea>
+            <p> Por favor sea lo más específico posible. Básicamente indíquenos los paso que causan el problema, como funciona normalmente y que hace ahora</p>
+        </section>
+      </fieldset>
+
+      <section>
+        <fieldset>
+            <label for="data">Datos de Quien Reporta</label> <br>
+           
+            <div class="row">
+                <div>
+                    <label for="Name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="">
+                </div>
+
+                <div>
+                    <label for="last-name"> Primer Apellido</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="">
+                </div>
+
+                <div>
+                    <label for="second-lastname">Segundo Apellido</label>
+                    <input type="text" name="second-l" id="second-l" placeholder="">
+                </div>
+            </div>
+        </fieldset>
+      </section>
+
+    <section>
+        <fieldset>
+         <label for="issue">¿Dónde se tropezó con el problema?</label>
+            <p>indique donde ocurrió el problema</p>
+
+            <div class="radios"> <br>
+                <label for="radios">  <input type="radio" name="problem" id="program"> Programa </label>
+                <label for="radios"> <input type="radio" name="problem" id="link"> Enlace</label>
+                <label for="radios"> <input type="radio" name="problem" id="site"> Página web</label>
+                <label for="radios"><input type="radio" name="problem" id="other"> Otro</label>
+            </div> <br> <br>
+
+            <label for="phone">N° de télefono</label> <br>
+            <div>
+                <div class="phone-group">
+                    <input type="number" name="telefono" id="telefono" maxlength="3">
+                    <span>-</span>
+                    <input type="number" name="telefono" id="telefono" maxlength="3">
+                    <span>-</span>
+                    <input type="number" name="telefono" id="telefono" maxlength="3">
+                </div>
+            </div> <br>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="mail" id="mail">
+        </fieldset>
+    </section>
+
+    <section>
+        <fieldset>
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+        </fieldset>
+    </section>
+
+    <section>
+        <div class="footer">
+            Si Tiene algún problema, envíenos un correo <a href="#">Contactenos</a>
+        </div>
+    </section>
+     </fieldset>
+    </div>
+  
+
+</body>
+</html>
